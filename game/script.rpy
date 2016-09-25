@@ -2,16 +2,30 @@
 
 # Declare images below this line, using the image statement.
 # eg. image eileen happy = "eileen_happy.png"
+image hunky men = "hunky_men.png"
 
 # Declare characters used by this game.
-define e = Character('Eileen', color="#c8ffc8")
-
+define n = Character('Narrator', color="#AA0000")
 
 # The game starts here.
 label start:
 
-    e "You've created a new Ren'Py game."
+  "You arrive on the beautiful island カリフォニャ."
+  "The sun is shining, and there are already hunky men everywhere."
+  show hunky men
+  "But look out! You need to focus if you're ever going to win the contest."
+  "What contest, you may ask?"
 
-    e "Once you add a story, pictures, and music, you can release it to the world!"
+  menu:
+    "What contest?":
+      jump explain_like_im_five
+
+    "Get on with it, I'm just here for the guys.":
+      jump you_know_the_drill
+
+  label explain_like_im_five:
+    "ミス美人, the \"Ichiban Bijin Miss Contest\" is held every year on the island."
+
+  label you_know_the_drill:
 
     return

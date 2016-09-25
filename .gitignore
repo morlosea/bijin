@@ -87,3 +87,14 @@ ENV/
 
 # Rope project settings
 .ropeproject
+
+#Ren'Py Stuff
+*.rpy[cod]
+tmp/
+cache/
+game/saves/
+errors.txt
+log.txt
+traceback.txt
+
+*.bak
