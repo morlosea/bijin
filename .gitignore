@@ -93,6 +93,7 @@ ENV/
 tmp/
 cache/
 game/saves/
+game/images/
 errors.txt
 log.txt
 traceback.txt
